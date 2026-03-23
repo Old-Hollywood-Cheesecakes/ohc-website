@@ -317,7 +317,7 @@
                         <div class="contact-details">
                             <div class="contact-item">
                                 <span class="contact-label">Email</span>
-                                <a href="#" id="contact-email" onclick="this.href='mailto:'+['orders','oldhollywoodcheesecakes.com'].join('@');return true;">orders&#64;oldhollywoodcheesecakes&#46;com</a>
+                                <a href="#" id="contact-email">[loading...]</a>
                             </div>
                             
                             <div class="contact-item">
@@ -360,6 +360,16 @@
     <footer id="main-footer"></footer>
 
     <script>
+        // Obfuscated email — assembled at runtime, invisible to crawlers
+        (function() {
+            const e = document.getElementById('contact-email');
+            if (e) {
+                const addr = 'orders' + '\u0040' + 'oldhollywoodcheesecakes.com';
+                e.textContent = addr;
+                e.href = 'mailto:' + addr;
+            }
+        })();
+
         async function loadComponent(id, file) {
             try {
                 const response = await fetch(file);

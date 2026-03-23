@@ -1,8 +1,14 @@
 <div class="header-container">
     <a href="/" class="logo-link">
         <picture>
-            <source srcset="/images/old-hollywood-logo.webp" type="image/webp">
-            <img src="/images/old-hollywood-logo.png" alt="Old Hollywood Cheesecakes" class="hollywood-logo-img" width="300" height="150" fetchpriority="high">
+            <source
+                type="image/webp"
+                srcset="/images/old-hollywood-logo-150w.webp 150w, /images/old-hollywood-logo-300w.webp 300w, /images/old-hollywood-logo.webp 742w"
+                sizes="(max-width: 480px) 150px, (max-width: 768px) 200px, 300px">
+            <source
+                srcset="/images/old-hollywood-logo-150w.png 150w, /images/old-hollywood-logo-300w.png 300w, /images/old-hollywood-logo.png 742w"
+                sizes="(max-width: 480px) 150px, (max-width: 768px) 200px, 300px">
+            <img src="/images/old-hollywood-logo-300w.png" alt="Old Hollywood Cheesecakes" class="hollywood-logo-img" width="742" height="416" fetchpriority="high">
         </picture>
     </a>
 

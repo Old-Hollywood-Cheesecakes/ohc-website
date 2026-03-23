@@ -78,6 +78,7 @@ header {
     width: auto;
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease;
+    aspect-ratio: 742 / 416;
 }
 
 .hollywood-logo-img:hover {
