@@ -1,7 +1,5 @@
 /* ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&display=swap');
-
 /* Old Hollywood Cheesecakes - Classic B&W Theme  */
 /* Elegant Black & White with Cream Accents      */
 /* ============================================ */
@@ -48,6 +46,9 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 100px;
 }
 
 @media (max-width: 768px) {
@@ -380,6 +381,12 @@ section {
     background-position: center;
     border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+@supports (background-image: url("x.webp")) {
+    .flavor-name-star {
+        background-image: url("/images/walk-star.webp");
+    }
 }
 
 .flavor-name-star::after{

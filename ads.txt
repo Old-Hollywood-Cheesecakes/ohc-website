@@ -1,0 +1,4 @@
+# ads.txt - Old Hollywood Cheesecakes
+# This site does not currently use programmatic advertising.
+# Contact: orders@oldhollywoodcheesecakes.com
+CONTACT=orders@oldhollywoodcheesecakes.com
